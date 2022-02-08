@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="./main.css">
+</head>
+<!-- https://www.youtube.com/watch?v=y4h190a6e0Y -->
+<body>
+    <div class="main-wrapper">
+        <h1>Мой первый калкульятор</h1>
+        <div class="inputs-block">
+            <div class="input-block-column">
+                
+                <div class="inputs-wrapper">
+                    <h2>Доход в месяц</h2>
+                   <ul class="ul-items">
+                    <li> 
+                    <input 
+                    type="number"
+                    placeholder="Зарплата"
+                    id="income-salary"
+                    class="input"
+                    >
+                    </li>
+                    <li> 
+                    <input 
+                    type="number"
+                    placeholder="Фриланс"
+                    id="income-freelance"
+                    class="input"
+                    >
+                </li>
+                    <li> <input 
+                    type="number"
+                    placeholder="Доп.доход"
+                    id="income-extra-1"
+                    class="input"
+                    >
+                </li>
+                <li> <input 
+                    type="number"
+                    placeholder="Доп.доход"
+                    id="income-extra-2"
+                    class="input"
+                    >
+                </li>
+                </ul>
+                </div>
+                
+                <div class="inputs-wrapper">
+                    <h2>Обязательные расходы</h2>
+                    <ul class="ul-items">
+                     <li> 
+                     <input 
+                     type="number"
+                     placeholder="Аренда квартиры"
+                     id="costs-flat"
+                     class="input"
+                     >
+                     </li>
+                     <li> 
+                     <input 
+                     type="number"
+                     placeholder="ЖКХ"
+                     id="costs-house-services"
+                     class="input"
+                     >
+                 </li>
+                     <li> <input 
+                     type="number"
+                     placeholder="Транспорт"
+                     id="costs-transport"
+                     class="input"
+                     >
+                 </li>
+                 <li> <input 
+                    type="number"
+                    placeholder="Кредиты"
+                    id="costs-credit"
+                    class="input"
+                    >
+                </li>
+                 </ul>
+                 </div>
+                 <div class="inputs-wrapper">
+                    <h2>Доступные в месяц (без копилки)</h2>
+                    <ul class="ul-items">
+                     <li> 
+                     <input 
+                     type="number"
+                     class="total"
+                     id="total-month"
+                     value="0"
+                     readonly
+                     > 
+                    </li> </ul>
+                     <h2>Доступно в день</h2>
+                    <ul class="ul-items">
+                     <li> 
+                     <input 
+                     type="number"
+                     class="total"
+                     id="total-day"
+                     value="0"
+                     readonly
+                     > </li> </ul>
+                     <h2>Накопим за год</h2>
+                    <ul class="ul-items">
+                     <li> 
+                     <input 
+                     type="number"
+                     class="total"
+                     id="total-year"
+                     value="0"
+                     readonly
+                     > </li></ul>
+                   
+                    
+                         
+            </div>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
